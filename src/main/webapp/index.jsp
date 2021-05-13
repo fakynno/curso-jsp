@@ -7,27 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%@ include file="pagina-include.html" %>
-
-	<h1>Bem vindo ao curso de JSP!</h1>
-	<% out.println("Introdução ao JSP!"); %>
-	
-	<form action="receber-nome.jsp">
-		<input type="text" id="nome" name="nome">
-		<input type="submit" value="Enviar"/>	
-	</form>
-	
-	<%
-		session.setAttribute("curso", "curso de jsp");
-	%>
-	
-	<br/>
-	<%@ page import="java.util.Date" %>
-
-	<%= "data de hoje: " + new Date() %>	
-	
-	<h2>INDEX</h2>
-	<jsp:forward page="receber-nome.jsp"></jsp:forward>
+	<jsp:include page="cabecalho.jsp">
+	<h1>Index</h1>	
+	<h3>pagina somente de teste</h3>	
+	<jsp:include page="rodape.jsp">
 	
 </body>
 </html>
