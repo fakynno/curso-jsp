@@ -1,3 +1,4 @@
+<jsp:useBean id="calcula" class="beans.BeansCursoJsp" type="beans.BeansCursoJsp" scope="page"/>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -7,6 +8,14 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<jsp:setProperty property="*" name="calcula"/>
 	<h2>Cabeçalho</h2>
+	
+	 <jsp:getProperty property="nome" name="calcula"/>
+	 <br/>
+	  <jsp:getProperty property="ano" name="calcula"/>
+	  <br/>
+	   <jsp:getProperty property="sexo" name="calcula"/>
+	   <br/>
 </body>
 </html>
