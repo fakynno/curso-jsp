@@ -10,13 +10,7 @@
 <body>
 	<jsp:setProperty property="*" name="calcula"/>
 	
-	<h3>Cabeçalho</h3>
-		Nome: ${param.nome}
-		<br/>
-		Ano: ${param.ano}
-		<br/>
-		Sexo: ${param.sexo}
-		<br/>
+	<h3>Seja bem vindo ao sistema</h3>		
 	
 </body>
 </html>
