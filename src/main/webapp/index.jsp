@@ -13,13 +13,18 @@
 	
 	<form action="cabecalho.jsp" method="post">
 	
+	  <div>
+		Nome: 
 		<input type="text" id="nome" name="nome"/>
 		<br/>
+		Ano:
 		<input type="text" id="ano" name="ano"/>
 		<br/>
+		Sexo:
 		<input type="text" id="sexo" name="sexo"/>
 		<br/>
-		<input type="submit" value="testar"/>
+		<input type="submit" value="testar"/>	  
+	  </div>
 			
 	</form>	
 </body>
