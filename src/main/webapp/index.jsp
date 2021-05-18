@@ -11,19 +11,16 @@
 <body>
 	<h1>Index</h1>	
 	
-	<form action="cabecalho.jsp" method="post">
+	<form action="LoginServlet" method="post">
 	
 	  <div>
-		Nome: 
-		<input type="text" id="nome" name="nome"/>
+		Login: 
+		<input type="text" id="login" name="login"/>
 		<br/>
-		Ano:
-		<input type="text" id="ano" name="ano"/>
+		Senha:
+		<input type="text" id="senha" name="senha"/>
 		<br/>
-		Sexo:
-		<input type="text" id="sexo" name="sexo"/>
-		<br/>
-		<input type="submit" value="testar"/>	  
+		<input type="submit" value="Fazer login"/>	  
 	  </div>
 			
 	</form>	
