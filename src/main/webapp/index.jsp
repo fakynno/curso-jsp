@@ -38,6 +38,11 @@
 	   </c:otherwise>
 	   	 
 	 </c:choose>
+	 
+	 <c:forTokens items="Luigi-Macedo-Vasconcelos-de-Aquino" delims="-" var="nome">
+	 	Nome : <c:out value="${nome}"/>
+	 		<br/>	
+	 </c:forTokens>
 		
 	
 	<c:forEach var="inteiro" begin="1" end="${numero}">
