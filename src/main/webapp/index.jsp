@@ -2,6 +2,9 @@
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +13,40 @@
 </head>
 <body>
 	<h1>Index</h1>	
+	
+	<c:out value="${'bem vindo ao JSTL'}"></c:out>
+	
+	<p/>
+	<p/>
+	<p/>
+	
+	<c:set var="numero" value="${100/2}"></c:set>	
+	
+	 <c:choose>
+	   
+	   <c:when test="${numero > 50}">
+	   		<c:out value="${'Maior que 50'}"/>
+	   </c:when>
+	   
+	   <c:when test="${numero < 50}">
+	   		<c:out value="${'Menor que 50'}"/>
+	   </c:when>
+	
+	   <c:otherwise>
+	   	 <c:out value="${'Não encontrou valor correto'}"/>
+	   	 <br/>
+	   </c:otherwise>
+	   	 
+	 </c:choose>
+		
+	
+	<c:forEach var="inteiro" begin="1" end="${numero}">
+		Item: ${inteiro}		
+	</c:forEach>
+	
+	<p/>
+	<p/>
+	<p/>
 	
 	<form action="LoginServlet" method="post">
 	
