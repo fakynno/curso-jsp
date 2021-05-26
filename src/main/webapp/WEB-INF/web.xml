@@ -6,7 +6,7 @@
   </welcome-file-list>  
   
   <filter>
-  	<filter-name>filtro</filter-name>
+  	<filter-name>filter</filter-name>
   	<filter-class>filter.Filter</filter-class>
   </filter>
 </web-app>
