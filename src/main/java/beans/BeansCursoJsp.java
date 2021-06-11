@@ -4,15 +4,7 @@ public class BeansCursoJsp {
 
 	private String login;
 
-	private String senha;
-	
-	/* metodo para validar login e senha */
-	public boolean validarLoginSenha(String login, String senha) {
-		if (login.equalsIgnoreCase("admin") && senha.equalsIgnoreCase("admin")) {
-			return true;
-		} 
-		  return false;
-	}
+	private String senha;	
 
 	public String getLogin() {
 		return login;
