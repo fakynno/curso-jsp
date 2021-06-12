@@ -21,7 +21,7 @@
 		    <td><input type="password" id="senha" name="senha"> </td>
 		  </tr>		  
 		</table>
-		<input type="button" value="Salvar">
+		<input type="submit" value="Salvar">
 	</form>
 </body>
 </html>
