@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import beans.BeansCursoJsp;
+import beans.BeanCursoJsp;
 import connection.SingleConnection;
 
 public class DaoUsuario {
@@ -15,7 +15,7 @@ public class DaoUsuario {
 		connection = SingleConnection.getConnection();
 	}
 	
-	public void salvar(BeansCursoJsp usuario) {
+	public void salvar(BeanCursoJsp usuario) {
 		
 		try {
 			

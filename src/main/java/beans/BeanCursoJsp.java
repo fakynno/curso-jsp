@@ -1,6 +1,6 @@
 package beans;
 
-public class BeansCursoJsp {
+public class BeanCursoJsp {
 
 	private String login;
 
