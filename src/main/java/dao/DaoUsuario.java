@@ -25,6 +25,7 @@ public class DaoUsuario {
 			stmt.setString(2, usuario.getSenha());
 			stmt.execute();
 			connection.commit();
+			System.out.println("Usuario " + usuario.getLogin() + " salvo com sucesso!");
 		} catch (Exception e) {
 			e.printStackTrace();
 			try {

@@ -33,7 +33,8 @@ public class Usuario extends HttpServlet {
 		
 		BeanCursoJsp cursoJsp = new BeanCursoJsp();
 		cursoJsp.setLogin(login);
-		cursoJsp.setSenha(senha);		
+		cursoJsp.setSenha(senha);	
+		
 		daoUsuario.salvar(cursoJsp);
 	}
 
