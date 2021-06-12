@@ -2,7 +2,10 @@ package dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 import beans.BeanCursoJsp;
 import connection.SingleConnection;
@@ -34,6 +37,29 @@ public class DaoUsuario {
 				e1.printStackTrace();
 			}
 		}
+		
+	}
+	
+	public List<BeanCursoJsp> listarUsuarios() throws Exception {
+		
+		List<BeanCursoJsp> lista = new ArrayList<BeanCursoJsp>();
+		
+		String sql = "select * from usuario";
+		
+		PreparedStatement stmt = connection.prepareStatement(sql);
+		ResultSet resultSet = stmt.executeQuery();
+		
+		while (resultSet.next()) {
+			
+			BeanCursoJsp cursoJsp = new BeanCursoJsp();
+			
+			cursoJsp.setLogin(resultSet.getString("login"));
+			cursoJsp.setSenha(resultSet.getString("senha"));
+			
+			lista.add(cursoJsp);
+		}
+		
+		return lista;
 		
 	}
 
