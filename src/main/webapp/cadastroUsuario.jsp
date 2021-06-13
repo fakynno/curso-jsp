@@ -30,8 +30,10 @@
 	
 		<c:forEach items="${ usuarios }" var="user">
 			<tr>
-				<td style="100px"><c:out value="${user.login}"></c:out>
+				<td style="width: 150px"><c:out value="${user.login}"></c:out>
 				<td><c:out value="${user.senha}"></c:out>
+				
+				<td><a href="salvarUsuario?acao=delete&user=${user.login}">Excluir</a></td>
 			</tr>
 		</c:forEach>
 	
